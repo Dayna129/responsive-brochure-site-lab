@@ -7,6 +7,35 @@
     max-width: 1000px; 
     margin: 0 auto;
     background-color:rgb(252, 245, 233);
+
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 17px;
+  font-size: 13px;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+
+}
+
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding-left: 40px;
+}
+
+aside {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+
 }
 
 /* header tabs - style the tab */
@@ -44,21 +73,17 @@
 }
 
 
-h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: xx-large;
-    padding-left: 40px;
+.sitelogo {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
-h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    padding-left: 40px;
-
-}
-
-
-img {
+.landscape {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -72,11 +97,11 @@ img {
 }
 
 /* multicolumn with floats */
-
 .row {
     background-color:rgb(255, 220, 146);
     max-width: 1000px;
     vertical-align: middle;
+    padding-bottom: 15px;
 }
 
 #multicolumns {
@@ -96,14 +121,51 @@ img {
 
 /* main text multicolumn with floats*/
 #multicolumn {
-    float: left;
+
     width: 33.33%;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    #multicolum {
+ul.b {
+    list-style-type: square;
+}
+
+.mobMenu {
+    display: none;
+}
+
+
+/* 
+
+ ABOVE THIS POINT IS 'GLOBAL'
+ 
+ Responsive layout - MOBILE VIEW - makes the three columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
+    #multicolumns {
+        column-count: 1;
         width: 100%;
+    }
+
+    .mobMenu {
+        display: block;
+        float: right;
+        background-color: #e0902877;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+
+    .tab {
+        display: none;
+    }
+    
+    h1 {
+        padding-top: 50px;
+    }
+
+    .sitelogo {
+        margin-top: 10px;
+    }
 }
 
 
@@ -125,7 +187,7 @@ img {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);*/
+    transform: translateY(-50%);
 
 
-}
+}*/
